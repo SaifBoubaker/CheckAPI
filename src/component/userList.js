@@ -8,7 +8,7 @@ const UserListe = () => {
   let {idd} = useParams();
  
   const [users,setUsers]= useState([])
-  let filltered = users.filter(element => element.id === idd)
+  let filltered = users.filter(element => element.id === +idd)
 
 
   const getDataUSers= async()=>{
